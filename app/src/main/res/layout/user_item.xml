@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingLeft="16dp"
+    android:paddingRight="16dp"
+    android:paddingTop="8dp"
+    android:foreground="?android:attr/selectableItemBackground" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/displayPhotoCiv"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:src="@drawable/user_profile"
+            android:layout_marginRight="16dp"/>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_gravity="center_vertical">
+
+            <TextView
+                android:id="@+id/usernameTv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/person_name_tv_2"
+                android:layout_gravity="center_vertical"
+                android:textSize="16dp"/>
+
+            <TextView
+                android:id="@+id/emailTv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/example_email_tv_2"
+                android:layout_gravity="center_vertical"
+                android:textSize="12dp"/>
+
+        </LinearLayout>
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/friendIv"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:src="@drawable/add_friend"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:foreground="?android:attr/selectableItemBackground" />
+
+    <TextView
+        android:id="@+id/youTv"
+        android:text="@string/you_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:visibility="gone"/>
+
+</RelativeLayout>

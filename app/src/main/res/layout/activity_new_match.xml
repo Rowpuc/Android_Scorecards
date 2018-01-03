@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.mad.tennisscoringprototype.activity.NewMatchActivity"
+    android:fitsSystemWindows="true">
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/matchFormatTv"
+                android:text="@string/best_of_tv"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="18dp"
+                style="?android:attr/listSeparatorTextViewStyle" />
+
+            <Spinner
+                android:id="@+id/matchSetsSpr"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+            </Spinner>
+
+        </LinearLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <TextView
+                android:id="@+id/player1Tv"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/playing_against_tv"
+                android:textSize="18dp"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                style="?android:attr/listSeparatorTextViewStyle" />
+
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginBottom="16dp">
+
+            <Button
+                android:id="@+id/choosePlayer1Btn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/choose_player_btm"
+                style="@style/Widget.AppCompat.Button.Colored"/>
+
+            <TextView
+                android:id="@+id/player2NameTv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="18dp"/>
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/playerToServeTv"
+            android:text="@string/player_to_serve_tv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="18dp"
+            style="?android:attr/listSeparatorTextViewStyle"/>
+
+        <RadioGroup
+            android:id="@+id/playerToServeRg"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            android:layout_marginBottom="16dp">
+            <RadioButton
+                android:id="@+id/player1Rbtn"
+                android:hint="@string/player_1_rb"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <RadioButton
+                android:id="@+id/player2Rbtn"
+                android:hint="@string/player2_rb"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </RadioGroup>
+
+        <Button
+            android:id="@+id/startMatchBtn"
+            android:text="@string/start_match_btn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            style="@style/Widget.AppCompat.Button.Colored"/>
+
+    </LinearLayout>
+</RelativeLayout>
