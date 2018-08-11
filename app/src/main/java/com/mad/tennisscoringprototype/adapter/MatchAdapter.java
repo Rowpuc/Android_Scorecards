@@ -9,10 +9,6 @@ import android.widget.TextView;
 import com.mad.tennisscoringprototype.R;
 
 /**
- * Created by rowdo on 24/09/2017.
- */
-
-/**
  * @author rowdo
  * @version 1.0
  *          <p>
@@ -109,7 +105,7 @@ public class MatchAdapter extends RecyclerView.Adapter<MatchAdapter.ViewHolder> 
             mPlayer2ScoreTv.setText(score);
         }
 
-        public void setmStatusTv(String status) {
+        public void setStatusTv(String status) {
             mStatusTv.setText(status);
         }
 
